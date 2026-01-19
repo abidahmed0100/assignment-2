@@ -139,6 +139,7 @@ i{
 }
     
 .img-btn{
+    position: absolute;
     border: none;
     font-weight: 600;
     background-color: #00FF88;
@@ -153,6 +154,7 @@ i{
 
 
 .tech-box {
+   
     color: white;
     text-align: center;
     transform: translate(-0px -10000px);
@@ -192,6 +194,7 @@ i{
     margin-left: 8px;
     margin-top: 24px;
     
+    
 }
 
 .btn-ms img{
@@ -202,6 +205,112 @@ i{
 
  .hidden{
     display: none;
+}
+
+.podcast{
+    border: none;
+    width: 1200px;
+    height: 200px;
+    color: white;
+    font-weight: small;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    padding: 16px;  
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.podcast h1{
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+.card{
+    display: flex;
+    gap: 80px;
+    justify-content: space-evenly;
+    /* margin: 50px auto; */
+    text-align: center;
+   
+}
+.card-container{
+    padding-top: 50px;
+}
+
+.card .card-container h1{
+    font-size: 3rem;
+    
+    
+}
+.card-container p{
+    font-size: small;
+    color: white;
+   padding-bottom: 200px;
+    gap: 30px;
+}
+
+.choose{
+    background-color: #230E3D;
+    /* padding-top: 120px; */
+    padding-bottom: 120px;
+}
+
+.choose h1{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 120px;
+    /* padding-top: 40px; */
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    grid-template-rows: repeat(3,250px);
+    
+    /* border: 1px solid teal; */
+    justify-content: space-evenly;
+     margin: 40px 200px 120px 200px; 
+    background-color: #230E3D;
+}
+.box img,h3,p{
+    margin-left: 40px;
+}
+.box img{
+    margin-top: 40px;
+    padding-bottom: 16px;
+}
+.box p{
+    padding-top: 16px;
+
+}
+
+.box-hard{
+    color: white;
+    /* border:1px solid teal; */
+    border-radius: 20px;
+    gap: 30px;
+    background-color: #351165;
+}
+
+.raw-layout{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.column-layout{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+normal-layout{
+    grid-column: span 1;
+    grid-row: span 1;
 }
 
 
@@ -228,8 +337,8 @@ i{
 }
 .banner {
     background-size: contain;
-    height: 900px;
-    width: 1600px;
+    height: 760px;
+    width: 100%;
     background-repeat: no-repeat;
     padding: 10px;
    
@@ -243,7 +352,7 @@ i{
 }
 .banner-mico img {
     height: 80px;
-    width: auto;
+    /* width: auto; */
     transform: translate(5px,-205px);
 
 }
@@ -258,9 +367,16 @@ i{
     transform: translate(-130px,-250px);
 }
 .tech-box{
-    transform: translate(0px,-400px);
+    transform: translate(0px,-350px);
+    font-size: x-small;
 }
 .tech-box h1{
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+.tech-box button{
+    height: 30px;
+    width: 130px;
+    font-size: smaller;
+    margin-top: 8px;
 }
 }
