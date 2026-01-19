@@ -57,40 +57,60 @@ i{
     background-color: transparent;
 }
 
-.recording {
+
+.banner {
     background-image: url(../assets/hero-bg.png);
+    height: 760px;
+    width: 100%;
+    
+    
 }
 
-.mico {
+.banner-image {
+     display: flex; 
     position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+   
 }
-
-.z-img {
-   display: flex;
-   justify-content: center;
-    text-align: center;
+.banner-circle {
+    height: 350px;
+    width: 350px;
+    transform: translate(50px,50px);
+   text-align: center;
+    bottom: 200px;
     
     
+}
+.banner-circle img{
+    height: 250px;
+    width: 250px;
+    bottom: 500px;
+;
+    
+   
    
 }
 
-.micophone {
-    z-index: 1;
-    right: -230px;
-    bottom: -90px;
+.banner-mico {
+     z-index: 1;
+    position: absolute;
+    transform: translate(50px,-0px);
 }
 
-.circle {
-    width: 350px;
-    height: 350px;
+.banner-mico img{
+    height: 150px;
+    width: auto;
+   
 }
-
-/* .micophone {
-    height: 200px;
-    width: 200px;
-} */
-
-.hero {
-    height: 350px;
-    width: 350px;
+    
+.img-btn{
+    border: none;
+    font-weight: 500;
+    background-color: #00FF88;
+    height: 30px;
+    width: 50px;
+    border-radius: 20px;
+    transform: translate(870px,-360px);
 }
