@@ -1,31 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-.color-1 {
-    background-color: #1A0B2E;
-}
-.inter-font{
+
+.inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    max-width: 100%;
+    
+}
+.jakanaka{
+    background: linear-gradient(60deg,#F7E93F,#FB09B4,#9100F8);
+    background-size: contain; 
+
+}
+
+.light-green{
+    color: #00FF88;
+}
+
+.color-1 {
+    background-color: #1A0B2E;
+}
+
+
+
 .navbar {
     border-bottom: 1px solid #412567;
     align-items: center;
     justify-content: center;
-    width: 1600px;
+    width: 100%;
     height: 60px;
    
-    
-    
+  
+   
 }
 
 .nav-img {
     display: flex;
     justify-content: space-around;
     align-items: center;
+     
 }
 
 .btn{
@@ -33,7 +59,6 @@
     border: none;
     border-radius: 20px;
     padding: 12px 16px;
-    background: linear-gradient(60deg,#F7E93F,#FB09B4,#9100F8);
 }
 
 .menu {
@@ -55,16 +80,24 @@
 }
 i{
     background-color: transparent;
+    vertical-align: middle;
 }
 
 
 .banner {
     background-image: url(../assets/hero-bg.png);
+    background-size: contain;
     height: 760px;
     width: 100%;
-    
-    
+    background-repeat: no-repeat;
+     background-size: cover; 
+    max-width: 100%;   
+   
 }
+
+
+
+
 
 .banner-image {
      display: flex; 
@@ -77,15 +110,15 @@ i{
 .banner-circle {
     height: 350px;
     width: 350px;
-    transform: translate(50px,50px);
+    transform: translate(-10px,40px);
    text-align: center;
     bottom: 200px;
     
     
 }
 .banner-circle img{
-    height: 250px;
-    width: 250px;
+    height: 350px;
+    width: 350px;
     bottom: 500px;
 ;
     
@@ -96,7 +129,7 @@ i{
 .banner-mico {
      z-index: 1;
     position: absolute;
-    transform: translate(50px,-0px);
+    transform: translate(-10px,30px);
 }
 
 .banner-mico img{
@@ -107,10 +140,127 @@ i{
     
 .img-btn{
     border: none;
-    font-weight: 500;
+    font-weight: 600;
     background-color: #00FF88;
     height: 30px;
     width: 50px;
     border-radius: 20px;
-    transform: translate(870px,-360px);
+    transform: translate(-80px,-100px);
+    z-index: 2;
+    position: absolute;
+    box-shadow: #00FF88 0px 0px 8px;
+}
+
+
+.tech-box {
+    color: white;
+    text-align: center;
+    transform: translate(-0px -10000px);
+    z-index: 2;
+    margin-bottom: 100px;
+}
+.tech-box h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.tech-box p{
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+
+.btn-sp{
+    color: white;
+    border:none;
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+.btn-sp img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.btn-ms{
+    border: 1px solid #00FF88;
+    background-color: transparent;
+    height: 35px;
+    width: 120px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 24px;
+    
+}
+
+.btn-ms img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+ .hidden{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 576px) {
+ .menu ,.btn {
+        display: none;
+    
+}
+
+.navbar{
+   flex-direction: column;
+   height: 30px;
+   
+}
+
+.nav-img{
+    justify-content: space-between
+    
+}
+.nav-img img{
+   max-width: 137px;
+   
+}
+.banner {
+    background-size: contain;
+    height: 900px;
+    width: 1600px;
+    background-repeat: no-repeat;
+    padding: 10px;
+   
+}
+
+.banner-circle img {
+    height: 150px;
+    width: 150px;
+    transform: translate(5px,-120px);
+   
+}
+.banner-mico img {
+    height: 80px;
+    width: auto;
+    transform: translate(5px,-205px);
+
+}
+
+
+.hidden{
+   display: block;
+   justify-content: space-between;
+    }
+
+.img-btn{
+    transform: translate(-130px,-250px);
+}
+.tech-box{
+    transform: translate(0px,-400px);
+}
+.tech-box h1{
+    font-size: 1rem;
+}
 }
