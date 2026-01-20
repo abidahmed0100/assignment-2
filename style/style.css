@@ -86,11 +86,11 @@ i{
 
 .banner {
     background-image: url(../assets/hero-bg.png);
-    background-size: contain;
+    background-size:cover;
     height: 760px;
     width: 100%;
     background-repeat: no-repeat;
-     background-size: cover; 
+     
     max-width: 100%;   
    
 }
@@ -135,6 +135,8 @@ i{
 .banner-mico img{
     height: 150px;
     width: auto;
+    transform: scale(1.3);
+    transition: 5s;
    
 }
     
@@ -150,6 +152,7 @@ i{
     z-index: 2;
     position: absolute;
     box-shadow: #00FF88 0px 0px 8px;
+    
 }
 
 
@@ -254,9 +257,9 @@ i{
 }
 
 .choose{
-    background-color: #230E3D;
+    background-color: #1A0B2E;
     /* padding-top: 120px; */
-    padding-bottom: 120px;
+    padding-bottom: 10px;
 }
 
 .choose h1{
@@ -277,7 +280,7 @@ i{
     /* border: 1px solid teal; */
     justify-content: space-evenly;
      margin: 40px 200px 120px 200px; 
-    background-color: #230E3D;
+    background-color: #1A0B2E;
 }
 .box img,h3,p{
     margin-left: 40px;
@@ -308,75 +311,240 @@ i{
     grid-column: span 2;
     grid-row: span 1;
 }
-normal-layout{
+.normal-layout{
     grid-column: span 1;
     grid-row: span 1;
+}
+
+.for{
+    background-color: #1A0B2E;
+}
+
+.future h1{
+    color: white;
+   text-align: center; 
+   padding-top: 120px;
+   padding-bottom: 40px;
+}
+.hadi{
+    
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 400px;
+    width: 380px;
+    background-color: #412567 ;
+}
+
+.osman iframe{
+    border-radius: 20px;
+    width: 380px;
+    height: 220px;
+    padding: 5px;
+
+}
+.osman{
+    display: flex;
+    gap: 30px;
+    margin: 0px auto;
+    justify-content: center;
+} 
+
+.osman h4{
+    padding:24px 0px 12px 34px ;
+    
+}
+
+.host {
+    display: flex;
+    border: none;
+    width: 1200px;
+    height: 280px;
+    margin: 0 auto;
+    color:white;
+    background-color:#412567;
+    border-radius: 20px;
+}
+
+.host .image{
+    height: 200px;
+    width: 200px;
+    padding: 40px 4px 40px 40px;
+}
+
+.morgan {
+    padding: 50px;
+}
+.morgan h2{
+padding:  0px 0px 0px 40px;    
+
+}
+
+.logo{
+    margin: 10px 0px 0px 40px;
+    
+}
+
+.logo img{
+    /* padding: 8px 0px 0px 40px; */
+     vertical-align: middle; 
+     text-align: center;
+     height: 20px;
+     width: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.meet {
+    padding-bottom: 100px;
+}
+
+.meet h1{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+   
+}
+
+.pdcast{
+    background-image: url(../assets/footer-bg.png);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 150px 0px 100px 80px;
+
+   
+
+}
+
+.icon{
+     display: flex; 
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     color: white;
+     gap: 30px   ;
+    
+     
+}
+
+.icon-logo {
+     display: flex; 
+      justify-content: center;
+      gap: 5px;
+      
+    
+    
+
+}
+
+.tech-img {
+    /* margin-top:100px ; */
+}
+
+.copyright {
+    color: white;
 }
 
 
 
 @media screen and (max-width: 576px) {
- .menu ,.btn {
+    .menu {
         display: none;
-    
-}
-
-.navbar{
-   flex-direction: column;
-   height: 30px;
-   
-}
-
-.nav-img{
-    justify-content: space-between
-    
-}
-.nav-img img{
-   max-width: 137px;
-   
-}
-.banner {
-    background-size: contain;
-    height: 760px;
-    width: 100%;
-    background-repeat: no-repeat;
-    padding: 10px;
-   
-}
-
-.banner-circle img {
-    height: 150px;
-    width: 150px;
-    transform: translate(5px,-120px);
-   
-}
-.banner-mico img {
-    height: 80px;
-    /* width: auto; */
-    transform: translate(5px,-205px);
-
-}
-
-
-.hidden{
-   display: block;
-   justify-content: space-between;
     }
-
-.img-btn{
-    transform: translate(-130px,-250px);
-}
-.tech-box{
-    transform: translate(0px,-350px);
-    font-size: x-small;
+    .btn{
+        display: none;
+    }
+    .hidden {
+    display: block;
+    justify-content: center;
 }
 .tech-box h1{
-    font-size: 1.2rem;
+    font-size:none;
 }
-.tech-box button{
-    height: 30px;
-    width: 130px;
-    font-size: smaller;
-    margin-top: 8px;
+
+.box img, h3, p {
+    margin-left: 0px;
 }
+.podcast{
+    height: auto;
+    width: auto;
+}
+
+.card {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    /* justify-content: space-evenly; */
+    /* margin: 50px auto; */
+    text-align: center;
+}
+.card-container p {
+padding-bottom: 0px;
+
+
+}
+.box{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    margin: auto;
+    justify-content: center;
+  
+}
+.column-layout{
+      height: auto;
+    width: auto;
+}
+
+.osman {
+    flex-direction: column;
+   
+} 
+
+.hadi{
+     height: auto;
+    width: auto;
+    margin: 5px 5px 5px 5px;
+}
+
+    .box img, h3, p {
+        margin-left: 30px;
+    }
+.osman iframe{
+    width: 360px;
+    height: auto;
+}
+.host {
+    flex-direction: column;
+   
+    width: 350px;
+    height: 480px;
+    margin: 0 auto;
+    color: white;
+    background-color: #412567;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.morgan {
+    padding: 0%;
+}
+
+.icon {
+    flex-direction: column;
+}
+
 }
